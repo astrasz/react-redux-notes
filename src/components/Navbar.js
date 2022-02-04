@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const logoStyle = {
   paddingLeft: "12px",
@@ -6,27 +6,25 @@ const logoStyle = {
 
 function Navbar() {
   return (
-    // <div className="navbar-fixed">
     <nav>
       <div className="nav-wrapper">
         <div className="brand-logo" style={logoStyle}>
-          <Link to="/">Logo</Link>
+          <NavLink to="/">Logo</NavLink>
         </div>
 
         <ul id="nav-mobile" className="right">
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/create">Create</Link>
+            <NavLink to="/create">Create</NavLink>
           </li>
           <li>
-            <Link to="/list">List</Link>
+            <NavLink to="/list">List</NavLink>
           </li>
         </ul>
       </div>
     </nav>
-    // </div>
   );
 }
 
